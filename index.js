@@ -1,3 +1,5 @@
+document.getElementById("myBtn").addEventListener("click", randomizer);
+function randomizer(){
 var randomNumber1=Math.floor(Math.random()*6)+1;
 var randomNumber2=Math.floor(Math.random()*6)+1;
 
@@ -16,3 +18,4 @@ else{
 
 document.getElementsByTagName("img")[0].setAttribute("src","images/dice"+randomNumber1+".png");
 document.getElementsByTagName("img")[1].setAttribute("src","images/dice"+randomNumber2+".png");
+}
